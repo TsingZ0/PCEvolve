@@ -1,0 +1,33 @@
+name: gen
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch
+  - torchvision
+  - torchaudio
+  - torchtext
+  - pytorch-cuda=12 # update according to your CUDA
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pip
+  - openai
+  - sentencepiece
+  - protobuf
+  - diffusers=0.32
+  - pip:
+    - transformers
+    - accelerate
+    - omegaconf
+    - invisible-watermark
+    - torcheval
+    - torcheval-nightly # resolve Intel MKL ERROR
+    - wilds
+    - opacus
+    - ujson
+
+# cd glide-text2im-main
+# pip install -e .
