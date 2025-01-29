@@ -1,12 +1,12 @@
 import time
 from algo.server.ServerBase import ServerBase
-from algo.client.selector.POEM import Client as POEM
+from algo.client.selector.PCE import Client as PCE
 
 
 class Server(ServerBase):
     def __init__(self, args):
-        if args.selector == 'POEM':
-            args.Client = POEM
+        if args.selector == 'PCE':
+            args.Client = PCE
         else:
             raise NotImplementedError
         super().__init__(args)
