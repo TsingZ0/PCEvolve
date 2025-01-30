@@ -24,7 +24,7 @@ class Client(Selector):
 
         # Exponential mechanism param process
         Ks = [
-            min(self.args.K, self.args.volume_per_label - self.current_volume_per_label[yc])
+            min(1, self.args.volume_per_label - self.current_volume_per_label[yc])
             for yc in range(self.args.num_labels)
         ]
         self.epsilon = self.args.epsilon / sum(Ks)
@@ -57,7 +57,7 @@ class Client(Selector):
                         score = 0
                     else:
                         score = - (score_max - score) / (score_max - score_min) # normalize to [-1,0]
-                    score_new = np.exp(score / self.args.temperature).item() # [0,1]
+                    score_new = np.exp(score * self.args.tau).item() # [0,1]
                     exp_value = np.exp(self.epsilon * score_new / (2*self.sensitivity)).item()
                     exp_list[yc].append(exp_value)
             else:
@@ -102,7 +102,7 @@ class Client(Selector):
         for yy, proto in enumerate(self.protos):
             dist = self.calculate_dist(vec, proto)
             if yy == yc:
-                imp = - (dist + self.args.tau)
+                imp = - (dist)
                 score = - dist
             else:
                 imp = - dist
