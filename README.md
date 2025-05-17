@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository provides the official implementation of our paper, [Synthetic Image Generation with Few-Shot Private Data and Generative APIs]()—accepted as a spotlight paper at ICML 2025. The project builds upon our open-sourced framework, [CoAutoGen](https://github.com/TsingZ0/CoAutoGen), which contains core baselines and essential utilities. For ongoing updates and maintenance, please refer to [CoAutoGen](https://github.com/TsingZ0/CoAutoGen). 
+This repository provides the official implementation of our paper, [Domain-Adaptive Synthetic Image Generation from Few-Shot Private Data via Generative APIs]()—accepted as a spotlight paper at ICML 2025. The project builds upon our open-sourced framework, [CoAutoGen](https://github.com/TsingZ0/CoAutoGen), which contains core baselines and essential utilities. For ongoing updates and maintenance, please refer to [CoAutoGen](https://github.com/TsingZ0/CoAutoGen). 
 
 ## Preparation
 
