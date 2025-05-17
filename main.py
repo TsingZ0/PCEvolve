@@ -129,7 +129,8 @@ if __name__ == "__main__":
     parser.add_argument('-ipas', "--IPAdapter_scale", type=float, default=0.2, 
                         help="[0,1]")
     # PCE
-    parser.add_argument('-tau', "--tau", type=float, default=10.0)
+    parser.add_argument('-tau', "--tau", type=float, default=10.0, 
+                        help="Similarity calibrating factor.")
 
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = args.device_id
