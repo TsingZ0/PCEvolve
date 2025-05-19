@@ -128,7 +128,7 @@ if __name__ == "__main__":
     parser.add_argument('-uipa', "--use_IPAdapter", type=bool, default=False)
     parser.add_argument('-ipas', "--IPAdapter_scale", type=float, default=0.2, 
                         help="[0,1]")
-    # PCE
+    # PCEvolve
     parser.add_argument('-tau', "--tau", type=float, default=10.0, 
                         help="Similarity calibrating factor.")
 

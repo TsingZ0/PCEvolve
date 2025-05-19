@@ -1,12 +1,12 @@
 import time
 from algo.server.ServerBase import ServerBase
-from algo.client.selector.PCE import Client as PCE
+from algo.client.selector.PCEvolve import Client as PCEvolve
 
 
 class Server(ServerBase):
     def __init__(self, args):
-        if args.selector == 'PCE':
-            args.Client = PCE
+        if args.selector == 'PCEvolve':
+            args.Client = PCEvolve
         else:
             raise NotImplementedError
         super().__init__(args)

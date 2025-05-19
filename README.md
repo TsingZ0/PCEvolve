@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository provides the official implementation of our paper, [Domain-Adaptive Synthetic Image Generation from Few-Shot Private Data via Generative APIs]()—accepted as a spotlight paper at ICML 2025. The project builds upon our open-sourced framework, [CoAutoGen](https://github.com/TsingZ0/CoAutoGen), which contains core baselines and essential utilities. For ongoing updates and maintenance, please refer to [CoAutoGen](https://github.com/TsingZ0/CoAutoGen). 
+This repository provides the official implementation of our paper, [PCEvolve: Private Contrastive Evolution for Synthetic Dataset Generation via Few-Shot Private Data and Generative APIs]()—accepted as a spotlight paper at ICML 2025. The project builds upon our open-sourced framework, [CoAutoGen](https://github.com/TsingZ0/CoAutoGen), which contains core baselines and essential utilities. For ongoing updates and maintenance, please refer to [CoAutoGen](https://github.com/TsingZ0/CoAutoGen). 
 
 ## Preparation
 
@@ -18,7 +18,7 @@ This repository provides the official implementation of our paper, [Domain-Adapt
 
 ## Run the Code
 
-For a COVID-19 pneumonia detection task, generate 100 synthetic images per class based on 10 real and **private chest radiography (X-ray) images** on the edge using the Stable Diffusion API. The edge device utilizes a ResNet-18, with Private Contrastive Evolution (PCE) for selection and feedback provided with privacy protection:
+For a COVID-19 pneumonia detection task, generate 100 synthetic images per class based on 10 real and **private chest radiography (X-ray) images** on the edge using the Stable Diffusion API. The edge device utilizes a ResNet-18, with Private Contrastive Evolution (PCEvolve) for selection and feedback provided with privacy protection:
 ```bash  
 python -u main.py \
   -tt syn \        # Task Type: Only using the synthetic dataset for downstream task
@@ -35,6 +35,6 @@ python -u main.py \
   -cmp 1 \         # Other hyperparameter
   -cef 1 \         # Other hyperparameter
   -cdata COVIDx \  # Private dataset
-  -s PCE \         # Synthetic data selector: Private Contrastive Evolution
+  -s PCEvolve \    # Synthetic data selector: Private Contrastive Evolution
   -tau 10          # Similarity calibrating factor
 ```  
