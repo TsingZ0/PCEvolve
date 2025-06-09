@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository provides the official implementation of our paper, *[PCEvolve: Private Contrastive Evolution for Synthetic Dataset Generation via Few-Shot Private Data and Generative APIs](https://arxiv.org/abs/2506.05407)*—accepted as a **spotlight paper at ICML 2025**. The project builds upon our open-sourced framework, [EvolveGen](https://github.com/TsingZ0/EvolveGen), which contains core baselines and essential utilities. For ongoing updates and maintenance, please refer to [EvolveGen](https://github.com/TsingZ0/EvolveGen). 
+This repository provides the official implementation of our paper, *[PCEvolve: Private Contrastive Evolution for Synthetic Dataset Generation via Few-Shot Private Data and Generative APIs](https://arxiv.org/abs/2506.05407)*—accepted as a **spotlight paper (top 2.6%) at ICML 2025**. The project builds upon our open-sourced framework, [EvolveGen](https://github.com/TsingZ0/EvolveGen), which contains core baselines and essential utilities. For ongoing updates and maintenance, please refer to [EvolveGen](https://github.com/TsingZ0/EvolveGen). 
 
 ## Preparation
 
