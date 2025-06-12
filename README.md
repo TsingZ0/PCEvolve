@@ -2,6 +2,13 @@
 
 This repository provides the official implementation of our paper, *[PCEvolve: Private Contrastive Evolution for Synthetic Dataset Generation via Few-Shot Private Data and Generative APIs](https://arxiv.org/abs/2506.05407)*—accepted as a **spotlight paper (top 2.6%) at ICML 2025**. The project builds upon our open-sourced framework, [EvolveGen](https://github.com/TsingZ0/EvolveGen), which contains core baselines and essential utilities. For ongoing updates and maintenance, please refer to [EvolveGen](https://github.com/TsingZ0/EvolveGen). 
 
+![](./PCEvolve.png)
+Illustration of our PCEvolve, whose core is the DP-protected selector. Different colors denote distinct data classes (two classes are explicitly shown, with others indicated by “. . .”). “Agg” and “Exp” denote the class center aggregation and
+the exponential mechanism, respectively.
+
+![](./generated_images.png)
+Generated leather surface images w.r.t. MVAD-l for industry anomaly detection. The three rows show normal images, cut defects, and droplet defects. “Initial” denotes the initial synthetic images in PE and PCEvolve. “Private” denotes the real images from MVAD-l.
+
 ## Preparation
 
 1. **Prepare the Required Large Model APIs (Skip If Using Online APIs).**  
